@@ -2,6 +2,8 @@ package CAN_305
 
 import "encoding/binary"
 
+// Details of the CAN message with ID 305 - Contains the battery information
+
 type CAN_305 struct {
 	vBatt   uint16
 	iBatt   int16

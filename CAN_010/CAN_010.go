@@ -2,6 +2,8 @@ package CAN_010
 
 import "math"
 
+// Details of the CAN message with ID 010 - Contains the frequency of the mains
+
 type CAN_010 struct {
 	fDecimal uint8
 	fInteger uint8

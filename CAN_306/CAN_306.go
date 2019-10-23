@@ -2,6 +2,8 @@ package CAN_306
 
 import "encoding/binary"
 
+// Details of the CAN message with ID 010 - Contains charging information
+
 type CAN_306 struct {
 	sohBatt            uint16
 	chargingProcedure  byte
