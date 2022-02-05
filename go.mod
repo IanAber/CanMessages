@@ -1,4 +1,4 @@
-module CanMessages
+module github.com/IanAber/CanMessages
 
 go 1.16
 
