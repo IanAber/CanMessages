@@ -1,4 +1,4 @@
-package CAN_010
+package Can010
 
 import "math"
 

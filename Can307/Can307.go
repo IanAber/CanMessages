@@ -1,4 +1,4 @@
-package CAN_307
+package Can307
 
 // Details of the CAN message with ID 010 - Contains relay sand generator state etc.
 

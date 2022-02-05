@@ -1,4 +1,4 @@
-package CAN_305
+package Can305
 
 import "encoding/binary"
 

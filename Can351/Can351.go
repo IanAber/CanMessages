@@ -1,4 +1,4 @@
-package CAN_351
+package Can351
 
 import (
 	"encoding/binary"

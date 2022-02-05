@@ -1,4 +1,4 @@
-package CAN_306
+package Can306
 
 import "encoding/binary"
 

@@ -1,4 +1,4 @@
-package CAN_356
+package Can356
 
 import "encoding/binary"
 import "github.com/brutella/can"
@@ -14,11 +14,6 @@ Unused (16 bit)
 type Can356 struct {
 	data [8]byte
 }
-
-//func New(d []byte) CAN_351 {
-//	c := CAN_351{binary.LittleEndian.Uint16(d[0:]), uint16(binary.LittleEndian.Uint16(d[2:])), uint16(binary.LittleEndian.Uint16(d[4:])), binary.LittleEndian.Uint16(d[6:])}
-//	return c
-//}
 
 func (_ Can356) New(voltage float32, current float32, temperature float32) Can356 {
 	this := Can356{}
