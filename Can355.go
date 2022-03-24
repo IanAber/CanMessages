@@ -1,4 +1,4 @@
-package Can355
+package CanMessages
 
 import "encoding/binary"
 import "github.com/brutella/can"
@@ -15,7 +15,7 @@ type Can355 struct {
 	data [8]byte
 }
 
-func New(stateOfCharge uint16, stateOfHealth uint16, hiResolutionStateOfCharge float32) Can355 {
+func NewCan355(stateOfCharge uint16, stateOfHealth uint16, hiResolutionStateOfCharge float32) Can355 {
 	this := Can355{}
 	binary.LittleEndian.PutUint16(this.data[0:], stateOfCharge)
 	binary.LittleEndian.PutUint16(this.data[2:], stateOfHealth)

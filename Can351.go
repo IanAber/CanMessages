@@ -1,4 +1,4 @@
-package Can351
+package CanMessages
 
 import (
 	"encoding/binary"
@@ -22,7 +22,7 @@ type Can351 struct {
 //	return c
 //}
 
-func New(vSetpoint float32, iSetpoint float32, iDischarge float32, vDischarge float32) Can351 {
+func NewCan351(vSetpoint float32, iSetpoint float32, iDischarge float32, vDischarge float32) Can351 {
 	this := Can351{}
 	binary.LittleEndian.PutUint16(this.data[0:], uint16(vSetpoint*10.0))
 	binary.LittleEndian.PutUint16(this.data[2:], uint16(iSetpoint*10.0))

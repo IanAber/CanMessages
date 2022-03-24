@@ -1,4 +1,4 @@
-package Can35E
+package CanMessages
 
 import (
 	"github.com/brutella/can"
@@ -10,7 +10,7 @@ type Can35E struct {
 	data [8]byte
 }
 
-func New(manufacturer string) Can35E {
+func NewCan35E(manufacturer string) Can35E {
 	this := Can35E{}
 	copy(this.data[:], manufacturer)
 	return this

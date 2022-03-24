@@ -1,4 +1,4 @@
-package Can305
+package CanMessages
 
 import "encoding/binary"
 
@@ -11,7 +11,7 @@ type Can305 struct {
 	socBatt uint16
 }
 
-func New(d []byte) Can305 {
+func NewCan305(d []byte) Can305 {
 	c := Can305{binary.LittleEndian.Uint16(d[0:]), int16(binary.LittleEndian.Uint16(d[2:])), int16(binary.LittleEndian.Uint16(d[4:])), binary.LittleEndian.Uint16(d[6:])}
 	return c
 }

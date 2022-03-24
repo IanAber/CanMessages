@@ -1,4 +1,4 @@
-package Can010
+package CanMessages
 
 import "math"
 
@@ -9,7 +9,7 @@ type Can010 struct {
 	fInteger uint8
 }
 
-func New(d []byte) Can010 {
+func NewCan010(d []byte) Can010 {
 	c := Can010{d[2], d[3]}
 	return c
 }

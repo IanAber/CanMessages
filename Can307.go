@@ -1,4 +1,4 @@
-package Can307
+package CanMessages
 
 // Details of the CAN message with ID 010 - Contains relay sand generator state etc.
 
@@ -13,7 +13,7 @@ type Can307 struct {
 	func7      byte
 }
 
-func New(d []byte) Can307 {
+func NewCan307(d []byte) Can307 {
 	c := Can307{d[0], d[1], d[2], d[3], d[4], d[5], d[6], d[7]}
 	return c
 }
