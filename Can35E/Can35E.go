@@ -10,7 +10,7 @@ type Can35E struct {
 	data [8]byte
 }
 
-func (_ *Can35E) New(manufacturer string) Can35E {
+func New(manufacturer string) Can35E {
 	this := Can35E{}
 	copy(this.data[:], manufacturer)
 	return this

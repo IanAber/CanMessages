@@ -9,7 +9,7 @@ type Can010 struct {
 	fInteger uint8
 }
 
-func (_ Can010) New(d []byte) Can010 {
+func New(d []byte) Can010 {
 	c := Can010{d[2], d[3]}
 	return c
 }

@@ -12,7 +12,7 @@ type Can306 struct {
 	chargeSetPoint     uint16
 }
 
-func (_ Can306) New(d []byte) Can306 {
+func New(d []byte) Can306 {
 	c := Can306{binary.LittleEndian.Uint16(d[0:]), d[2], d[3], binary.LittleEndian.Uint16(d[4:]), binary.LittleEndian.Uint16(d[6:])}
 	return c
 }

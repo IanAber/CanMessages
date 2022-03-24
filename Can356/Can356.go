@@ -15,7 +15,7 @@ type Can356 struct {
 	data [8]byte
 }
 
-func (_ Can356) New(voltage float32, current float32, temperature float32) Can356 {
+func New(voltage float32, current float32, temperature float32) Can356 {
 	this := Can356{}
 	binary.LittleEndian.PutUint16(this.data[0:], uint16(voltage*100.0))
 	binary.LittleEndian.PutUint16(this.data[2:], uint16(current*10.0))
